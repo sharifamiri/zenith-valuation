@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/zenith-logo.svg';
+import logo from '../assets/val_logo.png';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

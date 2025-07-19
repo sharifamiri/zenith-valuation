@@ -2,10 +2,14 @@ import React from 'react';
 import Layout from '../components/Layout';
 import cvaBadge from '../assets/cva-badge.png';
 import aboutPhoto from '../assets/about-photo.png';
+import { Helmet } from 'react-helmet';
 
 const About = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>About | Zenith Valuation</title>
+      </Helmet>
       <section className="bg-white text-gray-800 py-16 px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}

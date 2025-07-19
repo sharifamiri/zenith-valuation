@@ -1,9 +1,13 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import { Helmet } from 'react-helmet';
 
 function Services() {
   return (
     <Layout>
+      <Helmet>
+        <title>Services | Zenith Valuation</title>
+      </Helmet>
       <section className="bg-gray-100 py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">

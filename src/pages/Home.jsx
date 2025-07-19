@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import valuationHero from '../assets/home-valuation.png';
+import { Helmet } from 'react-helmet';
 
 import {
   DocumentTextIcon,
@@ -17,16 +18,22 @@ import {
 function Home() {
   return (
     <Layout>
+      <Helmet>
+        <title>Zenith | Business Valuation</title>
+      </Helmet>
       {/* Unified Top Section */}
       <section className="bg-gradient-to-b from-white to-purple-50">
         {/* Hero */}
         <div className="py-16 flex justify-center">
           <div className="w-full max-w-7xl bg-[#f5f2eb] rounded-xl overflow-hidden px-8 py-12 flex flex-col lg:flex-row gap-12 items-start shadow-md">
             <div className="lg:w-1/2">
-              <h1 className="text-4xl font-bold text-gray-900 mb-6">
-                Reliable Business Valuations. Backed by Data. Delivered Fast.
+              <h1 className="text-4xl font-bold text-gray-900 mb-16 leading-relaxed">
+                <div>Reliable Business Valuations</div>
+                <div className="mt-2">Backed by Data</div>
+                <div className="mt-2">Delivered Fast</div>
               </h1>
-              <p className="text-lg text-gray-700 mb-8">
+
+              <p className="text-lg text-gray-700 mb-20">
                 At Zenith Valuation, we provide startups and small businesses with independent, defensible valuations — backed by financial models and real-world insight.
               </p>
               <Link

@@ -1,10 +1,14 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import { PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
+import { Helmet } from 'react-helmet';
 
 function Contact() {
   return (
     <Layout>
+      <Helmet>
+        <title>Contact | Zenith Valuation</title>
+      </Helmet>
       <section className="min-h-screen bg-white px-6 pt-20 pb-16 flex items-start justify-center">
         <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-start">
           {/* Left: Contact Form */}
